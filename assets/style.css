@@ -46,10 +46,15 @@ header {
     padding: 30px 10%;
     height: 800px;
     justify-content: space-between;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 2;
+    border: 5px solid purple;
+    
 }
 
 .profilepic {
     max-width: 30%;
+    max-height: 500px;
 }
 
 .aboutme div {
@@ -64,13 +69,15 @@ header {
     flex-direction: column;
     justify-content: space-around;
     padding: 30px 10%;
-    height: 500px;
+    height: 2000px;
+    border: 5px solid green;
 }
 
 .mywork div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
     
 }
 
@@ -85,7 +92,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     background-color: white;
-    border: 5px solid red;
+    border: 5px solid blue;
 }
 }
 
