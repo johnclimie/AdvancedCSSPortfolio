@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Climie Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href=".\assets\reset.css" />
+    <link rel="stylesheet" href=".\assets\style.css" />
 </head>
 
 
@@ -16,7 +16,7 @@
         <h1>My name is John Climie</h1>
         <!-- Navbar -->
         <nav>
-            <ul>
+            <ul class="nav_links">
                 <li><a href="#">About me</a></li>
                 <li><a href="#">My Work</a></li>
                 <li><a href="#">Contact me</a></li>
@@ -24,37 +24,40 @@
         </nav>
     </header>
 
-    <!-- Body -->
+    <!--Body-->
     <main>
-        <!-- Image of me -->
-        <img src="" alt="Image of me">
         <!-- About me section -->
-        <section>
-            <h2>About me</h2>
+        <section class="aboutme">
+        <!-- Image of me -->
+            <img src=".\assets\1629399839832.jpg" alt="Image of me" class="profilepic">
+            <div>
+                <h2>About me</h2>
 
-            <P>My name is John Climie, I am 21 years old. I am currently based in the Metro Atlanta Area. I graduated Locust Grove High School in 2019. 
-                    I have been studying Web Development for about one year. I currently hold one certificate in Responsive Web Design.
-                    I am looking to get my first job in Web Development sometime in 2022.
-            </P>
+                <P>My name is John Climie, I am 21 years old. I am currently based in the Metro Atlanta Area. I graduated Locust Grove High School in 2019. 
+                        I have been studying Web Development for about one year. I currently hold one certificate in Responsive Web Design.
+                        I am looking to get my first job in Web Development sometime in 2022.
+                </P>
+            </div>
         </section>
         <!-- Section showing my work  -->
-        <section>
+        <section class="mywork">
             <h2>My Work</h2>
-
-                <a href="add_link">My Favorite Music</a>
-                <a href="add_link">Web Development Resources</a>
-                <a href="add_link">My Dog's Portfolio</a>
-                <a href="add_link">Milage Recorder</a>
+                <div>
+                    <button>My Favorite Music</button>
+                    <button>Web Development Resources</button>
+                    <button>My Dog's Portfolio</button>
+                    <button>Mileage Recorder</button>
+                </div>
         </section>
         <!-- Section with links to other profiles -->
-        <section>
+        <section class="contact">
             <h2>Contact Me</h2>
                 <a href="add_link">LinkedIn</a>
                 <a href="add_link">Email</a>
                 <a href="add_link">Twitter</a>
                 <a href="add_link">Discord</a>
         </section>
-    </main>
+    </main> 
 </body>
 
 </html>
