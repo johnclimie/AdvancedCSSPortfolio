@@ -11,17 +11,23 @@
 h1, li {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 30px;
     text-decoration: none;
+}
+
+header, section {
+    margin: 5%;
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
     background-color: white;
     border: 5px solid red;
+    height: 300px;
 }
 
 .nav_links {
@@ -40,12 +46,11 @@ header {
 
 .aboutme {
     display: flex;
-    flex-wrap: wrap
     flex-direction: row;
     align-items: center;
     padding: 30px 10%;
     height: 800px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: "Ubuntu", sans-serif;
     line-height: 2;
     border: 5px solid purple;
@@ -67,24 +72,58 @@ header {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 30px 10%;
     height: 2000px;
     border: 5px solid green;
+    
+    font-family: "Ubuntu", sans-serif;
+}
+
+.mywork h2 {
+    font-size: 70px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mywork div {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    border: 5px solid pink;
+}
+
+.mywork div a {
+    display: flex;
+    height: 350px;
+    margin: 40px;
+    width: 75%;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid navy;
+}
+
+#largerproject {
+    height: 400px;
+    width: 85%;
+}
+
+#smallerprojects {
+    display: flex;
     flex-direction: row;
-
-    
+    justify-content: space-evenly;
 }
 
-.mywork div button {
-    width: 25%;
-    padding: 100px;
+#smallerprojects a {
+    width: 20%;
+    font-size: 16px;
+
 }
+
 
 .contact {
     display: flex;
@@ -93,8 +132,68 @@ header {
     padding: 30px 10%;
     background-color: white;
     border: 5px solid blue;
+    height: 200px; 
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+    flex-direction: column;
+    margin-bottom: 5%
 }
+
+.contact div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    border: 5px solid orange;
+    height: 70%;
+    align-items: center;
 }
+
+@media (max-width: 1201px) {
+    .aboutme {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .profilepic {
+        max-width: 80%;
+    }
+
+    .mywork {
+        height:1500px
+    }
+    
+    #smallerprojects {
+        flex-direction: column;
+    }
+
+    #smallerprojects a {
+        height: 200px;
+        width: 60%;
+    }
+
+
+    .contact {
+        height: 400px;
+    }
+
+    .contact div {
+        flex-direction: column;;
+    }
+}
+
+@media (max-width: 1300px) {
+    header {
+        flex-direction: column;
+        text-align: center;justify-content: space-evenly;
+    }
+
+    header nav {
+        line-height: 1.6;
+    }
+}
+
+
+
 
 
 
