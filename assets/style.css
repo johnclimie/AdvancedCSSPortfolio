@@ -153,6 +153,8 @@ header h1 {
     justify-content: space-evenly;
 }
 
+
+
 #smallerprojects a:hover {
     border-color:#C6C5B9;
 }
@@ -161,6 +163,27 @@ header h1 {
     width: 20%;
     font-size: 16px;
 
+}
+
+#smallerprojects a img {
+    /* max-width: 100%;
+    max-height: 500px; */
+    height: 100%;
+    width: 100%;
+    border-radius: 70px;
+}
+
+#smallerprojects a img p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#smallerprojects img {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
 }
 
 
@@ -227,7 +250,6 @@ header h1 {
         width: 60%;
     }
 
-
     .contact {
         height: 400px;
     }
@@ -252,6 +274,17 @@ header h1 {
     .nav_links {
         flex-direction: column;
     }
+
+    .profilepic {
+        max-height: 400px;
+        margin-top: 20px;
+    }
+
+    .aboutme {
+        height: 1200px;
+    }
+
+
 }
 
 
