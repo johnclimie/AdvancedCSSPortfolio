@@ -125,6 +125,7 @@ header h1 {
 
 .mywork div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     background-color: #62929E;
@@ -298,6 +299,12 @@ header h1 {
     }
 
 
+}
+
+@media (max-width: 470px) {
+    .mywork h2 {
+        font-size: 30px;
+    }
 }
 
 
